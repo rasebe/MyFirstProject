@@ -3,6 +3,44 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+
+        System.out.println("Hello");
+        System.out.println("Raluca");
+        int a = 4;
+        int b = 3;
+        int sum = a + b;
+        System.out.println(sum);
+        int c = 12;
+        float d = 5;
+        float divide = c/d;
+        System.out.println(divide);
+        int e = -5;
+        int f = 8;
+        int g = 6;
+        int multiply = 8 * 6;
+        System.out.println(e + multiply);
+        int h = 55;
+        int i = 9;
+        System.out.println((h + i) % i);
+        int j = 20;
+        int k = -3;
+        int l = 5;
+        float m = 8;
+        System.out.println(j + (k*l) / m);
+        int n = 5;
+        int o = 15;
+        int p = 3;
+        int q = 2;
+        int r = 8;
+        System.out.println(n + (o / p) * q - (r % p));
+
+
+
+
+
+
+
+
         System.out.println("Hello world");
 
         //Data type
