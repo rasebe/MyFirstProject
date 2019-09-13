@@ -11,7 +11,7 @@ public class Main {
         int sum = a + b;
         System.out.println(sum);
         int c = 12;
-        float d = 5;
+        float d = 5f;
         float divide = c/d;
         System.out.println(divide);
         int e = -5;
@@ -25,7 +25,7 @@ public class Main {
         int j = 20;
         int k = -3;
         int l = 5;
-        float m = 8;
+        float m = 8f;
         System.out.println(j + (k*l) / m);
         int n = 5;
         int o = 15;
