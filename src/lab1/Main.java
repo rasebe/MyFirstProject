@@ -1,4 +1,4 @@
-package com.company;
+package lab1;
 
 public class Main {
 
@@ -37,10 +37,6 @@ public class Main {
 
 
 
-
-
-
-
         System.out.println("Hello world");
 
         //Data type
@@ -56,6 +52,16 @@ public class Main {
 
         System.out.println(gender);
         System.out.println("About my dog:");
+        System.out.println("Cainele meu este un " + breed + " in varsta de " + age + " ani");
+        System.out.println((levelOfEnergy) + (needOfAttentionLevel) + (gender));
+
+
+
+
+        int x = 34;
+        int y = x++;
+        int z = ++x;
+        System.out.println(x + y);
 
 
 
