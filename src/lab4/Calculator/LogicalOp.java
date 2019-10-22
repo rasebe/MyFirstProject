@@ -92,6 +92,7 @@ public class LogicalOp {
             return ("Invalid");
     }
     }
+    // FOR loop
         public void printToHundred (int number){
         for (int i = number; i <= 100; i++){
             System.out.print(i + ", ");
@@ -127,6 +128,30 @@ public class LogicalOp {
                     }
                 }
 
+                public int countFromNumToHundred (int num){
+                    int sum5 = 0;
+                    for(int i = num; i <= 100; ++i)
+                    {
+                        sum5 += i;
+                    }
+                    return (sum5);
+                }
+
+                public float averageFromGivenNumToHundred (int num2){
+                    int sum6 = 0;
+                    int count3 = 0;
+                    float average2 = 0;
+                    for(float i= num2; i<=100; i++)
+                    {
+                        sum6 += i;
+                        count3= count3+1;
+                        average2 = sum6/count3;
+                    }
+                    return (average2);
+                }
+
+
+                //WHILE loop
                 public float getAverageFromNumber (){
                     float sum2 = 0;
                     int no4 = 111;
@@ -139,74 +164,74 @@ public class LogicalOp {
                     return (sum2 / count);
                 }
 
-                public float getAverage (int no4){
-                    float sum3 = 0;
-                    int count2 = 0;
-                    float average = 0;
-                    for(float i= no4; i<=100; i=i+7)
-                    {
-                        sum3 += i;
-                        count2= count2+1;
-                        average = sum3/count2;
-                    }
-                    return (average);
-                }
+    public float getAverage (int no4){
+        float sum3 = 0;
+        int count2 = 0;
+        float average = 0;
+        for(float i= no4; i<=100; i=i+7)
+        {
+            sum3 += i;
+            count2= count2+1;
+            average = sum3/count2;
+        }
+        return (average);
+    }
 
-                public void fibonacci (){
-                    int biggestNumber = 20;
-                    int previousNumber = 0;
-                    int nextNumber = 1;
-                    for (int i = nextNumber; i <= biggestNumber; ++i)
-                    {
-                        System.out.print(previousNumber+" ");
+    public void fibonacci (){
+        int biggestNumber = 20;
+        int previousNumber = 0;
+        int nextNumber = 1;
+        for (int i = nextNumber; i <= biggestNumber; ++i)
+        {
+            System.out.print(previousNumber+" ");
 
-                        int sum4 = previousNumber + nextNumber;
-                        previousNumber = nextNumber;
-                        nextNumber = sum4;
-                    }
-                }
+            int sum4 = previousNumber + nextNumber;
+            previousNumber = nextNumber;
+            nextNumber = sum4;
+        }
+    }
 
-                public void cozaLozaWoza (int n2, int no6){
-                    for(int i=no6;i<n2;i++)
-                    {
-                        if(i%3==0)
-                        {
-                            System.out.print("Coza"+" ");
-                        }
-                        else if(i%5==0)
-                        {
-                            System.out.print("Loza"+" ");
-                        }
-                        else if(i%7==0)
-                        {
-                            System.out.print("Woza"+" ");
-                        }
-                        else if(i%3==0 && i%5==0)
-                        {
-                            System.out.print("CozaLoza"+" ");
-                        }
-                        else if (i%3==0 && i%7==0)
-                        {
-                            System.out.print("CozaWoza"+" ");
-                        }
-                        else if (i%5==0 && i%7==0)
-                        {
-                            System.out.print("WozaLoza"+" ");
-                        }
-                        else if (i%3==0 && i%5==0 && i%7==0)
-                        {
-                            System.out.print("CozaLozaWoza"+" ");
-                        }
-                        else
-                        {
-                            System.out.print(i+" ");
-                        }
-                        if(i%11==0)
-                        {
-                            System.out.println();
-                        }
-                    }
-                }
+    public void cozaLozaWoza (int n2, int no6){
+        for(int i=no6;i<n2;i++)
+        {
+            if(i%3==0)
+            {
+                System.out.print("Coza"+" ");
+            }
+            else if(i%5==0)
+            {
+                System.out.print("Loza"+" ");
+            }
+            else if(i%7==0)
+            {
+                System.out.print("Woza"+" ");
+            }
+            else if(i%3==0 && i%5==0)
+            {
+                System.out.print("CozaLoza"+" ");
+            }
+            else if (i%3==0 && i%7==0)
+            {
+                System.out.print("CozaWoza"+" ");
+            }
+            else if (i%5==0 && i%7==0)
+            {
+                System.out.print("WozaLoza"+" ");
+            }
+            else if (i%3==0 && i%5==0 && i%7==0)
+            {
+                System.out.print("CozaLozaWoza"+" ");
+            }
+            else
+            {
+                System.out.print(i+" ");
+            }
+            if(i%11==0)
+            {
+                System.out.println();
+            }
+        }
+    }
 }
 
 
