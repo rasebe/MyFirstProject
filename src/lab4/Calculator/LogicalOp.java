@@ -100,7 +100,7 @@ public class LogicalOp {
         }
 
         public void printToMinusHundred (int no2){
-            for (int y = no2; y >= -100; y--){
+            for (int y = no2; y > -100; y--){
         System.out.print(y + ", ");
             }
         }
@@ -150,29 +150,81 @@ public class LogicalOp {
                     return (average2);
                 }
 
-
-                //WHILE loop
-                public float getAverageFromNumber (){
-                    float sum2 = 0;
-                    int no4 = 111;
-                    int count = 0;
-                    for (int i = no4; i <= 8899; i++){
-                        sum2 += i;
-                        count ++;
+                public void starPattern (){
+                    for(int i = 1; i < 7; i++){
+                        for(int j = 1; j <= 7 - i; j++){
+                            System.out.print("*");
+                        }
+                        System.out.println();
                     }
-                    System.out.println(sum2);
-                    return (sum2 / count);
                 }
 
-    public float getAverage (int no4){
-        float sum3 = 0;
-        int count2 = 0;
-        float average = 0;
-        for(float i= no4; i<=100; i=i+7)
-        {
-            sum3 += i;
-            count2= count2+1;
-            average = sum3/count2;
+
+                //WHILE loop
+
+    public void printToHundredWhile (int number){
+        while (number <= 100){
+            number++;
+            System.out.print(number + ", ");
+        }
+    }
+
+    public void printToMinusHundredWhile (int number){
+        while (number > -100){
+            number--;
+            System.out.print(number + ", ");
+    }
+    }
+
+    public void printBetweenTwoNumbers (int num, int number){
+        while (num < number){
+            num++;
+            System.out.print(num + " ");
+    }
+    }
+
+    public void evenNumbersWhile (int n){
+        //int n = 100;
+        int i = 1;
+        while (i <= n){
+            i++;
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+
+    public void oddNumbersWhile (int num){
+        //int num = 100;
+        int i = 1;
+        while (i < num){
+            i++;
+            if (i % 2 != 0) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+                public float getAverageFromNumber (){
+                    float sum = 0;
+                    int number = 111;
+                    int count = 0;
+                    while (number <= 8899){
+                        sum = sum + number;
+                        number ++;
+                        count ++;
+                    }
+                    return (sum / count);
+                }
+
+    public float getAverage (int num){
+        int sum = 0;
+        int count = 0;
+        int average = 0;
+        while (num <= 100) {
+            num = num+7;
+            sum += num;
+            count= count+1;
+            average = sum/count;
         }
         return (average);
     }
@@ -181,19 +233,21 @@ public class LogicalOp {
         int biggestNumber = 20;
         int previousNumber = 0;
         int nextNumber = 1;
-        for (int i = nextNumber; i <= biggestNumber; ++i)
+        int i=1;
+        while(i <= biggestNumber)
         {
             System.out.print(previousNumber+" ");
-
-            int sum4 = previousNumber + nextNumber;
+            int sum = previousNumber + nextNumber;
             previousNumber = nextNumber;
-            nextNumber = sum4;
+            nextNumber = sum;
+            i++;
         }
     }
-
-    public void cozaLozaWoza (int n2, int no6){
-        for(int i=no6;i<n2;i++)
+    public void cozaLozaWoza (){
+        int i=1;
+        while (i<111)
         {
+            i++;
             if(i%3==0)
             {
                 System.out.print("Coza"+" ");
