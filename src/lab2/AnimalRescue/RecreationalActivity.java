@@ -2,10 +2,14 @@ package lab2.AnimalRescue;
 
 public class RecreationalActivity {
 
-    String raNameOne = "running";
-    String raNameTwo = "walking";
-    String raNameThree = "jumping";
-    String raNameFour = "playing";
+    public String getRecreationalActivityName() {
+        return recreationalActivityName;
+    }
 
+    public void setRecreationalActivityName(String recreationalActivityName) {
+        this.recreationalActivityName = recreationalActivityName;
+    }
+
+    private String recreationalActivityName;
 
 }

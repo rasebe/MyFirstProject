@@ -2,22 +2,23 @@ package lab2.AnimalRescue;
 
 public class Veterinarian {
 
-    String vetNameOne = "Toader Popa";
-    String vetSpecialtyOne = "anaesthesiology";
+    public String getVetName() {
+        return vetName;
+    }
 
-    String vetNameTwo = "Iulia Tudor";
-    String vetSpecialtyTwo = "equine";
+    public void setVetName(String vetName) {
+        this.vetName = vetName;
+    }
 
-    String vetNameThree = "Mihaela Calinescu";
-    String vetSpecialtyThree = "surgery";
+    public String getVetSpecialty() {
+        return vetSpecialty;
+    }
 
-    String vetNameFour = "Sebastian Viziru";
-    String vetSpecialtyFour = "dermatology";
+    public void setVetSpecialty(String vetSpecialty) {
+        this.vetSpecialty = vetSpecialty;
+    }
 
-    String vetNameFive = "Alexandru Todica";
-    String vetSpecialtyFive = "canine";
-
-    String vetNameSix = "Paula Lonean";
-    String vetSpecialtySix = "feline";
+    private String vetName;
+    private String vetSpecialty;
 
 }

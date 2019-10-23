@@ -2,13 +2,23 @@ package lab2.AnimalRescue;
 
 public class Adopter {
 
-    String adopterNameOne = "Luca Samariteanu";
-    int availableAmountOne = 4500;
+    public String getAdopterName() {
+        return adopterName;
+    }
 
-    String adopterNameTwo = "Ioana Ajutorescu";
-    int availableAmountTwo = 1000;
+    public void setAdopterName(String adopterName) {
+        this.adopterName = adopterName;
+    }
 
-    String adopterNameThree = "Marius Celdetreaba";
-    int availableAmountThree = 500;
+    public int getAvailableAmount() {
+        return availableAmount;
+    }
+
+    public void setAvailableAmount(int availableAmount) {
+        this.availableAmount = availableAmount;
+    }
+
+    private String adopterName;
+    private int availableAmount;
 
 }

@@ -2,19 +2,40 @@ package lab2.AnimalRescue;
 
 public class AnimalFood {
 
-    String brandNameOne = "Purizon";
-    float priceOne = 199.9f;
-    int quantityOne = 248765;
-    char stockAvailabilityOne = 'y';
+    private String brandName;
+    private float price;
+    private int quantity;
+    private char stockAvailability;
 
-    String brandNameTwo = "Whiskas";
-    float priceTwo = 67.9f;
-    int quantityTwo = 65419;
-    char stockAvailabilityTwo = 'y';
+    public String getBrandName() {
+        return brandName;
+    }
 
-    String brandNameThree = "Alpha Spirit";
-    float priceThree = 205.67f;
-    int quantityThree = 5897;
-    char stockAvailabilityThree = 'y';
+    public void setBrandName(String brandName) {
+        this.brandName = brandName;
+    }
 
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public char getStockAvailability() {
+        return stockAvailability;
+    }
+
+    public void setStockAvailability(char stockAvailability) {
+        this.stockAvailability = stockAvailability;
+    }
 }
