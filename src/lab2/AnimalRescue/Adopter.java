@@ -2,6 +2,9 @@ package lab2.AnimalRescue;
 
 public class Adopter {
 
+    private String adopterName;
+    private int availableAmount;
+
     public String getAdopterName() {
         return adopterName;
     }
@@ -17,8 +20,5 @@ public class Adopter {
     public void setAvailableAmount(int availableAmount) {
         this.availableAmount = availableAmount;
     }
-
-    private String adopterName;
-    private int availableAmount;
 
 }

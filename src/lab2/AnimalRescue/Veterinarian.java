@@ -2,6 +2,9 @@ package lab2.AnimalRescue;
 
 public class Veterinarian {
 
+    private String vetName;
+    private String vetSpecialty;
+
     public String getVetName() {
         return vetName;
     }
@@ -17,8 +20,5 @@ public class Veterinarian {
     public void setVetSpecialty(String vetSpecialty) {
         this.vetSpecialty = vetSpecialty;
     }
-
-    private String vetName;
-    private String vetSpecialty;
 
 }

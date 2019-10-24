@@ -35,7 +35,7 @@ public class AppMain {
         System.out.println(hector.getName());
 
         Cat kitycat = new Cat ();
-        kitycat.setAge(3.5f);
+        kitycat.setAge(3.5);
         System.out.println(kitycat.getAge());
 
         Horse blacky = new Horse ();
@@ -69,6 +69,27 @@ public class AppMain {
         kitycat.setWeight(6);
         System.out.println(kitycat.getWeight());
 
+        Horse smutty = new Horse();
+        smutty.setAge(4.5);
+        smutty.setColor("brown");
+        smutty.neighs();
+        smutty.eats();
+
+        Veterinarian pop = new Veterinarian();
+        pop.setVetSpecialty("dermatology");
+        pop.setVetName("Pop George");
+
+        RecreationalActivity run = new RecreationalActivity();
+        run.setRecreationalActivityName("running");
+
+        Adopter mesesan = new Adopter();
+        mesesan.setAvailableAmount(500);
+        mesesan.setAdopterName("Mesesan Luiza");
+
+        AnimalFood veggie = new AnimalFood();
+        veggie.setQuantity(76);
+        veggie.setPrice(179.9);
+        veggie.setBrandName("Veggie dog");
 
     }
 }
