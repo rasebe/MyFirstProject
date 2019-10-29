@@ -1,4 +1,4 @@
-package lab2.AnimalRescue;
+package lab5.AnimalRescue;
 
 public class AppMain {
     public static void main(String[] args) {
@@ -30,27 +30,27 @@ public class AppMain {
         //Veterinarian doctor = new Veterinarian();
         //System.out.println(doctor.vetSpecialtySix);
 
-        Dog hector = new Dog ();
+        Dog hector = new Dog();
         hector.setName("Hector");
         System.out.println(hector.getName());
 
-        Cat kitycat = new Cat ();
+        Cat kitycat = new Cat();
         kitycat.setAge(3.5f);
         System.out.println(kitycat.getAge());
 
-        Horse blacky = new Horse ();
+        Horse blacky = new Horse();
         blacky.setBreed("Frizon");
         System.out.println(blacky.getBreed());
 
-        Dog wolfy = new Dog ();
+        Dog wolfy = new Dog();
         wolfy.setColor("brown");
         System.out.println(wolfy.getColor());
 
-        Cat sheeba = new Cat ();
+        Cat sheeba = new Cat();
         sheeba.setFavoriteFood("whiskas");
         System.out.println(sheeba.getFavoriteFood());
 
-        Horse carrot = new Horse ();
+        Horse carrot = new Horse();
         carrot.setFavoriteRecreationalActivity("walking");
         System.out.println(carrot.getFavoriteRecreationalActivity());
 
@@ -90,6 +90,13 @@ public class AppMain {
         veggie.setQuantity(76);
         veggie.setPrice(179.9f);
         veggie.setBrandName("Veggie dog");
+
+        Parrot jimmy = new Parrot();
+        jimmy.walks();
+
+        hector.speaks();
+
+        sheeba.speaks();
 
     }
 }

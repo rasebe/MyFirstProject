@@ -1,4 +1,4 @@
-package lab2.AnimalRescue;
+package lab5.AnimalRescue;
 
 public class Animal {
     private String color;
@@ -113,6 +113,5 @@ public class Animal {
     public void eats (){
         System.out.println("Mnom mnom");
     }
-    public void speaks (){ System.out.println("...");
-    }
+    public void speaks (){ System.out.println("..."); }
 }
